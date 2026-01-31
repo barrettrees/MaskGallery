@@ -1,0 +1,95 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+body {
+	margin: auto;
+	width: 90vw;
+}
+.topmatter {
+	/*width: 60vw;*/
+/*	margin: auto;*/
+	margin-bottom: 10px;
+}
+header {
+	text-align: left;
+	margin: 0em 0em;
+}
+h1	{ 
+	font-size: 5em; 
+	margin-bottom: 10px;
+}
+h3 {
+  text-decoration: underline;
+}
+.sidenote {
+	font-family: serif;
+	font-style: italic;
+}
+p {
+	margin: 20px 10%;
+}
+.column-container {
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+	padding: 3px;
+}
+#mask-container>a {
+	margin: 0px 3px;
+	break-inside: avoid;
+}
+.mask-card {
+	break-inside: avoid;
+	border-width: 1px;
+	background-color: whitesmoke;
+	padding: 10px;
+	-webkit-transition-duration: 0.5s; /* Safari */
+	transition-duration: 0.5s;
+}
+
+.mask-img {
+	width: 100%;
+}
+.mask-card:hover {
+	box-shadow: 0px 0px 30px lightgrey;
+	background-color: white;
+}
+.byline>a>img, .byline>img {
+	width: 20px;
+	padding: 0px 4px;
+	/*vertical-align: middle;*/
+}
+h4 { /* Mask names */
+	font-size: 200%;
+	margin: 2px;
+	line-height: .9;
+	padding: 5px 0px;
+	-webkit-transition-duration: 0.5s; /* Safari */
+	transition-duration: 0.5s;
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 768px) { 
+	body {
+	}
+	header {
+		text-align: left;
+	}
+	h1 {
+		font-size: 7em;
+	}
+	#mask-container {
+		columns: 1;
+	}
+	.mask-card {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+}
+

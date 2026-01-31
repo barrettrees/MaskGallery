@@ -1,0 +1,55 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+		
+		  <head>
+		    <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <!-- Helps scale the page better on smaller screens-->
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		    <meta name="description" content="Info page for a Mask created by Kateherine Green for the Global Game Jame 2026">
+		    <meta name="author" content="Kateherine Green">
+		
+		    <link rel="icon" href="../../icons/favicon.ico" sizes="16x16">
+		
+		    <!-- Fonts -->
+	        <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Wire+One">
+		    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Abel'>
+		    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300">
+		    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=News+Cycle">
+		  
+		    <!-- CSS -->
+		    <link rel="stylesheet" href="../../style.css">
+		    <link rel="stylesheet" href="../../style-maskpage.css">
+		
+		    <!-- Libraries --> 
+		    <script type="text/javascript" src="../../lib/jquery-3.0.0.min.js"></script>
+		    <script type="text/javascript" src="../../lib/loki.js"></script>
+		
+		    <!-- JS -->
+		    <script type="text/javascript" src="../../data.js"></script>
+		    <script type="text/javascript" src="../../DataWrangler.js"></script>
+		    <script type="text/javascript" src="../../maskpage.js"></script>
+
+		  </head>
+		
+		  <body onload="makeMaskPage('Charizard Card')">
+		
+		    <div class="mask-info">
+				<div class="model-view">
+				<model-viewer id="mv-mask" camera-controls > </model-viewer>
+				</div>
+				<!-- <img src="screenshot.png" class="game-img">  -->
+		        <h1 class="mask-title"></h1>
+		        <div class="credit"></div>
+		        <div id="mask-description"></div>
+		        <a href="../../../index.html" class="back">&#8249; Back</a>
+		
+		      </div>
+		  </body>
+		
+		</html>
+		

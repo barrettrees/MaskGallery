@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
+
+
+<!-- <script>
+  window.onload = () => {
+  for (let i of document.querySelectorAll("model-viewer")) {
+    i.onclick = () => i.classList.toggle("full") 
+    // i.cameraControls=("True");
+    // i.onclick = () => i.cameraControls=("True");
+    // i.onclick = () => i.autoRotate=("True");
+    // i.onclick = () => i.cameraControls=("True");
+  }
+};
+</script>  -->
+
+<!-- Use it like any other HTML element -->
+<html>
+<style>
+model-viewer.full {
+  position: fixed;
+  top: 20vh; left: 20vw; z-index: 999;
+  width: 60vw; height: 60vh;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.7);
+}
+model-viewer.full:hover {
+  z-index: 999;
+  transform: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 16px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 0px;
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 0px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
+<!-- Header -->
+<div class="header">
+  <h1>Global Game Jam 2026 - Masks</h1>
+  <p>Katherine Green & Barrett Anderson</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+
+  </div>
+  <div class="column">
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+
+
+  </div>  
+  <div class="column">
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+
+
+  </div>
+  <div class="column">
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+    <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" > </model-viewer>
+
+
+  </div>
+</div>
+
+</body>
+</html>
+
+
+ <!-- <model-viewer  id="mv-mask" src="mask1.glb" poster ="mask1.png" camera-controls> </model-viewer> -->
