@@ -22,7 +22,7 @@ function makeMaskCards() {
 
     if (mask["name"]) {
 
-      var link = $('<a href=".MaskGallery/masks/' + mask["dir"] + '/index.html"></a>');
+      var link = $('<a href="./MaskGallery/masks/' + mask["dir"] + '/index.html"></a>');
       var card = $('<div></div>').addClass('mask-card');
 
       link.append(card);
