@@ -20,7 +20,7 @@ function makeMaskCards() {
   // For each mask 
   for (let mask of masks) {
 
-    if (mask["name"]) {
+    if (mask["ndir"]) {
 
       var link = $('<a href="./MaskGallery/masks/' + mask["dir"] + '/index.html"></a>');
       var card = $('<div></div>').addClass('mask-card');
