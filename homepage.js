@@ -22,12 +22,12 @@ function makeMaskCards() {
 
     if (mask["ndir"]) {
 
-      var link = $('<a href="./MaskGallery/masks/' + mask["dir"] + '/index.html"></a>');
+      var link = $('<a href="./masks/' + mask["dir"] + '/index.html"></a>');
       var card = $('<div></div>').addClass('mask-card');
 
       link.append(card);
 
-      card.append($('<img class="mask-img" src="./MaskGallery/masks/' + mask["dir"] + '/' + mask["poster"] + '">'));
+      card.append($('<img class="mask-img" src="./masks/' + mask["dir"] + '/' + mask["poster"] + '">'));
 
       card.append($('<h4>' + mask['name'] + '</h4>'));
       card.append($('<div class="byline">' + mask['credit'].join(' / ') + '</div>'));
