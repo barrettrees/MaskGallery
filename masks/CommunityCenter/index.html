@@ -34,6 +34,18 @@
 		    <script type="text/javascript" src="../../DataWrangler.js"></script>
 		    <script type="text/javascript" src="../../maskpage.js"></script>
 
+			<script>
+			$(document).ready(function(){
+
+				obs.addEventListener('mouseover', function() {
+					obs.src = 'hover-image.jpg';
+				});
+
+				obs.addEventListener('mouseout', function() {
+					obs.src = 'original-image.jpg';
+				})});
+			</script>
+
 		  </head>
 		
 		  <body onload="makeMaskPage('Community Center')">
@@ -43,9 +55,15 @@
 				<model-viewer id="mv-mask" camera-controls > </model-viewer>
 				</div>
 				<!-- <img src="screenshot.png" class="game-img">  -->
-		        <h1 class="mask-title"></h1>
-		        <div class="credit"></div>
-		        <div id="mask-description"></div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 30px;">
+					<div>
+						<h1 class="mask-title"></h1>
+						<div class="credit"></div>
+						<div id="mask-description"></div>
+					</div>
+					<div id="mask-illustration" class="photo">
+					</div>
+				</div>
 		        <a href="../../index.html" class="back">&#8249; Back</a>
 		
 		      </div>

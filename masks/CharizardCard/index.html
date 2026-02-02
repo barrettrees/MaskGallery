@@ -34,6 +34,18 @@
 		    <script type="text/javascript" src="../../DataWrangler.js"></script>
 		    <script type="text/javascript" src="../../maskpage.js"></script>
 
+			<script>
+			$(document).ready(function(){
+
+				obs.addEventListener('mouseover', function() {
+					obs.src = 'hover-image.jpg';
+				});
+
+				obs.addEventListener('mouseout', function() {
+					obs.src = 'original-image.jpg';
+				})});
+			</script>
+
 		  </head>
 		
 		  <body onload="makeMaskPage('Charizard Card')">
