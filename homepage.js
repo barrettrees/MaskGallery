@@ -29,8 +29,8 @@ function makeMaskCards() {
 
       card.append($('<img class="mask-img" src="masks/' + mask["dir"] + '/' + mask["poster"] + '">'));
 
-      card.append($('<h4>' + mask['name'] + '</h4>'));
-      card.append($('<div class="byline">' + mask['credit'].join(' / ') + '</div>'));
+      // card.append($('<h4>' + mask['name'] + '</h4>'));
+      // card.append($('<div class="byline">' + mask['credit'].join(' / ') + '</div>'));
 
       $('#mask-container').append(link);
     }
