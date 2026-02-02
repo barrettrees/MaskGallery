@@ -45,11 +45,11 @@
 					obs.src = 'original-image.jpg';
 				});
 
-				obs.addEventListener('touchenter', function() {
+				obs.addEventListener('touchstart', function() {
 					obs.src = 'hover-image.jpg';
 				});
 
-				obs.addEventListener('touchleave', function() {
+				obs.addEventListener('touchend', function() {
 					obs.src = 'original-image.jpg';
 				});
 			});
