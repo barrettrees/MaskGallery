@@ -43,7 +43,16 @@
 
 				obs.addEventListener('mouseout', function() {
 					obs.src = 'original-image.jpg';
-				})});
+				});
+
+				obs.addEventListener('touchstart', function() {
+					obs.src = 'hover-image.jpg';
+				});
+
+				obs.addEventListener('touchend', function() {
+					obs.src = 'original-image.jpg';
+				});
+			});
 			</script>
 
 		  </head>
