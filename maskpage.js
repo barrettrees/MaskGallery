@@ -1,5 +1,5 @@
 /*
- * Javascript to construct an individual game page (used by each game page) 
+ * Javascript to construct an individual mask page (used by each mask page) 
  */
 
 function makeMaskPage (maskname) {
