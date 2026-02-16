@@ -84,7 +84,19 @@ model-viewer {
 	height: 60vh;
 }
 
+.grid-container {
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-column-gap: 30px;
+}
 
+@media ( max-width: 850px ) {
+  .grid-container {
+	display: grid; 
+	grid-template-columns: 1fr 6fr 1fr; 
+	grid-column-gap: 30px;
+  }
+}
 
 /* Rightward triangle. Only if screen is wide enough to have cards to the right of the menu. */
 @media only screen and (min-width: 580px) { 
@@ -102,8 +114,3 @@ model-viewer {
 	}
 }
 
-.photo > img {
-  object-fit: cover;
-  width: 10%;
-  max-height: 100%;
-}
