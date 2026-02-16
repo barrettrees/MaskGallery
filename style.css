@@ -40,7 +40,7 @@ header>h1 {
 	font-weight: normal;
 }
 h2 {
-	/*font-family: 'Google Sans';*/
+	font-family: 'Google Sans';
 	letter-spacing: 0.2em;
 }
 h4 { /* Mask names */
@@ -94,3 +94,8 @@ model-viewer {
 	}
 }
 
+.photo > img {
+  object-fit: cover;
+  width: 10%;
+  max-height: 100%;
+}
