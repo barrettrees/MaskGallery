@@ -14,7 +14,7 @@ function makeMaskPage (maskname) {
 
 	document.getElementById('mv-mask').src = mask['model']
 	document.getElementById('mv-mask').poster = mask['poster']
-	document.getElementById('mask-illustration').appendChild(observation_photo);
+	document.getElementById('maskillustration').appendChild(observation_photo);
 	observation_photo.src = mask['obs_photo']
 	observation_photo.id="obs"
 	// observation_photo.onmouseover = mask['obs_photo_mouseover']
